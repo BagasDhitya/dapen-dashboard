@@ -1,12 +1,12 @@
-import React from 'react'
-import Layout from '../../components/Layout'
+import React from "react";
+import Layout from "../../components/Layout";
 
 const AdminDashboard = () => {
-    return (
-        <Layout>
-            <div></div>
-        </Layout>
-    )
-}
+  return (
+    <Layout subTitle="Admin Dashboard">
+      <div></div>
+    </Layout>
+  );
+};
 
-export default AdminDashboard
+export default AdminDashboard;
