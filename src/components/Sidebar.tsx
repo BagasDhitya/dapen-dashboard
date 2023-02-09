@@ -63,23 +63,23 @@ const Drawer = () => {
         </MenuItem>
         <div className="divider my-0"></div>
         <MenuItem
-          active={pathname.includes("/list1")}
+          active={pathname.includes("/item1")}
           icon={<UsersIcon />}
-          href="/list1"
+          href="/item1"
         >
           Item 1
         </MenuItem>
         <MenuItem
-          active={pathname.includes("/list2")}
+          active={pathname.includes("/item2")}
           icon={<BookOpenIcon />}
-          href="/list2"
+          href="/item2"
         >
           Item 2
         </MenuItem>
         <MenuItem
-          active={pathname.includes("/list3")}
+          active={pathname.includes("/item3")}
           icon={<QueueListIcon />}
-          href="/list3"
+          href="/item3"
         >
           Item 3
         </MenuItem>
