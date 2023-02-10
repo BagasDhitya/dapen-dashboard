@@ -64,11 +64,38 @@ const AdminDashboard = () => {
     },
   };
 
+  const words = [
+    {
+      title: "Title 1",
+      desc: faker.lorem.lines(),
+    },
+    {
+      title: "Title 2",
+      desc: faker.lorem.lines(),
+    },
+    {
+      title: "Title 3",
+      desc: faker.lorem.lines(),
+    },
+  ];
+
   return (
     <Layout subTitle="Admin Dashboard">
       <Cards>
         <Line options={options} data={data} />
       </Cards>
+      <div className="flex lg:flex-row my-10 flex-col">
+        {words.map((item) => {
+          return (
+            <Cards className="w-full lg:mx-5">
+              <div className="flex flex-col space-y-4">
+                <h1>{item.title}</h1>
+                <p>{item.desc}</p>
+              </div>
+            </Cards>
+          );
+        })}
+      </div>
     </Layout>
   );
 };
